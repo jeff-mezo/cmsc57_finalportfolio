@@ -1,0 +1,324 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CMSC 57 - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="./assets/js/apps.js"></script>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Discrete Mathematical Structures</a></h1>
+						<p>A Portfolio by: Jeffer John Mezo</p>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Topics</a>
+									<ul>
+										<li>
+											<a href="#">Unit 1 &nbsp &nbsp ❯</a>
+											<ul>
+												<li><a href="ls-basicsofcounting.html">Basic of Counting</a></li>
+												<li><a href="ls-pigeonhole.html">Pigeonhole Principle</a></li>
+												<li><a href="ls-permandcombi.html">Generalized Permutation and Combination</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Unit 2 &nbsp &nbsp ❯</a>
+											<ul>
+												<li><a href="rs-algebrastruct.html">Algebraic Structure</a></li>
+												<li><a href="rs-finiteprob.html">Finite Probability</a></li>
+												<li><a href="rs-expectedval.html">Expected Value & Variance</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Unit 3 &nbsp &nbsp ❯</a>
+											<ul>
+												<li><a href="ls-graphmodel.html">Graphs and Graph Models</a></li>
+												<li><a href="ls-eulerhamiltion.html">Euler and Hamiltonian Paths</a></li>
+												<li><a href="ls-graphcolor.html">Graph Coloring</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="current"><a href="application.html">Application</a></li>
+								<!-- <li><a href="about.html">About</a></li> -->
+								<!-- <li><a href="no-sidebar.html">No Sidebar</a></li> -->
+							</ul>
+						</nav>
+					</section>
+
+
+					<!-- Banner -->
+						<section class="app-banner" id="app-banner">
+							<header>
+								<h2>Portfolio Application</h2>
+							</header>
+						</section>
+
+
+						<section id="main">
+							<div class="container">
+								<div class="row aln-center">
+									
+									<div class="col-8 col-12-medium imp-medium">
+										<article class="box post">
+											<header>
+												<h2 style="margin-bottom: 35px;">Quiz</h2>
+											</header>
+
+											<section class="content-box">
+												<p>
+													How many socks should you pick from a drawer containing red, green, and blue socks to guarantee that you have at least two socks of the same color?
+												</p>
+												<input type="text" class="app-input" id="pigeonInput" placeholder="Enter you Answer" style="width: 200px;">
+												<button class="app-button" onclick="pigeonQuiz()">Submit</button>
+												<p id="pigeonResult"></p>
+											</section>
+
+											<section class="content-box">
+												<!-- <div class="form-check">
+													<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+													<label class="form-check-label" for="flexRadioDefault1">
+													  Default radio
+													</label>
+												  </div> -->
+												<form>
+													<p>Question: A bag contains 5 red balls, 3 blue balls, and 2 green balls. If one ball is randomly selected from the bag, what is the probability of drawing a red ball?</p>
+													<div class="choices">
+														<input type="radio" class="form-check-input" name="answer" value="a"> 1/2<br>
+														<input type="radio" class="form-check-input" name="answer" value="b"> 1/3<br>
+														<input type="radio" class="form-check-input" name="answer" value="c"> 5/10<br>
+														<input type="radio" class="form-check-input" name="answer" value="d"> 5/7<br>
+													</div><br>
+													<input type="button" value="Submit" onclick="checkQ1Answer()">
+													<p id="q1Result"></p>
+												</form>
+											
+											</section>
+
+											<section class="content-box">
+												<p>
+													Test your current knowledge about graph theory by answering the quiz below. Choose the best answer that corresponds to the graph show.
+												</p>
+												<form id="quizForm">
+													<p>Question 1:</p>
+													<div class="graph-quiz-img"><img src="./images/quiz_01/q1.png"></div>
+													<select name="question1">
+														<option value="">Select an option</option>
+														<option value="simple_graph">Simple Graph</option>
+														<option value="multigraph">Multigraph</option>
+														<option value="pseudograph">Pseudograph</option>
+														<option value="directed_graph">Directed Graph</option>
+													</select>
+	
+													<p id="q1Result"></p>
+												
+													<p>Question 2:</p>
+													<div class="graph-quiz-img"><img src="./images/quiz_01/q2.png"></div>
+													<select name="question2">
+														<option value="">Select an option</option>
+														<option value="simple_graph">Simple Graph</option>
+														<option value="multigraph">Multigraph</option>
+														<option value="pseudograph">Pseudograph</option>
+														<option value="directed_graph">Directed Graph</option>
+													</select>
+												
+													<p id="q2Result"></p>
+	
+													<p>Question 3:</p>
+													<div class="graph-quiz-img"><img src="./images/quiz_01/q3.png"></div>
+													<select name="question3">
+														<option value="">Select an option</option>
+														<option value="simple_graph">Simple Graph</option>
+														<option value="multigraph">Multigraph</option>
+														<option value="pseudograph">Pseudograph</option>
+														<option value="directed_graph">Directed Graph</option>
+													</select>
+												
+													<p id="q3Result"></p>
+	
+													
+												  </form>
+												  <button class="app-button" type="submit" onclick="checkGraphQuiz()">Submit</button>
+												  <p id="graphQuizResult"></p>
+											</section>
+
+											<section class="content-box">
+												<p>
+													Test your current knowledge about Euler Paths and Circuits by answering the quiz below. Choose the best answer that corresponds to the graph shown.
+												</p>
+												<form id="quizEuler">
+													<p>Question 1:</p>
+													<div class="graph-quiz-img"><img src="./images/quiz_02/q1.png"></div>
+													<select name="question1">
+														<option value="">Select an option</option>
+														<option value="no_euler">No Euler Path nor Circuit</option>
+														<option value="path_only">Has Euler Path Only</option>
+														<option value="path_circuit">Has Euler Path and Circuit</option>
+													</select>
+	
+													<p id="q1Result"></p>
+												
+													<p>Question 2:</p>
+													<div class="graph-quiz-img"><img src="./images/quiz_02/q2.png"></div>
+													<select name="question2">
+														<option value="">Select an option</option>
+														<option value="no_euler">No Euler Path nor Circuit</option>
+														<option value="path_only">Has Euler Path Only</option>
+														<option value="path_circuit">Has Euler Path and Circuit</option>
+													</select>
+												
+													<p id="q2Result"></p>									
+	
+													
+												  </form>
+												  <button class="app-button" type="submit" onclick="checkEulerQuiz()">Submit</button>
+												  <p id="eulerQuizResult"></p>
+											</section>
+
+											<section class="content-box">
+												<p>
+													Test your current knowledge about Hamiltonian Paths and Cycles by answering the quiz below. Choose the best answer that corresponds to the graph shown.
+												</p>
+												<form id="quizHamiltonian">
+													<p>Question 1:</p>
+													<div class="graph-quiz-img"><img src="./images/quiz_03/q1.png"></div>
+													<select name="question1">
+														<option value="">Select an option</option>
+														<option value="no_euler">No Hamiltonian Path nor Cycle</option>
+														<option value="path_only">Has Hamiltonian Path Only</option>
+														<option value="path_circuit">Has Hamiltonian Path and Circuit</option>
+													</select>
+	
+													<p id="q1Result"></p>
+												
+													<p>Question 2:</p>
+													<div class="graph-quiz-img"><img src="./images/quiz_03/q2.png"></div>
+													<select name="question2">
+														<option value="">Select an option</option>
+														<option value="no_euler">No Hamiltonian Path nor Cycle</option>
+														<option value="path_only">Has Hamiltonian Path Only</option>
+														<option value="path_circuit">Has Hamiltonian Path and Circuit</option>
+													</select>
+												
+													<p id="q2Result"></p>									
+	
+													
+												  </form>
+												  <button class="app-button" type="submit" onclick="checkHamiltonianQuiz()">Submit</button>
+												  <p id="hamiltonianQuizResult"></p>
+											</section>
+										</article>
+										<article class="box post">
+											<h2 style="margin-bottom: 30px">Calculators/Activities</h2>
+
+											<section class="content-box">
+												<h3>Product Rule</h3>
+												<p>Using the simple product calculator below, you can calculate the total combinations by applying the product rule. Start by entering values separated by comma:</p>
+												<input class="app-input" type="text" id="productInput" placeholder="Enter numbers separated by commas" />
+												<button class="app-button" onclick="calculateProduct()">Calculate Product</button>
+												<p id="productResult"></p>
+											</section>
+											
+											<section class="content-box">
+												<h3>Sum Rule</h3>
+												<p>Using the simple sum calculator below, you can calculate the total options by applying the sum rule. Start by entering values separated by comma:</p>
+													<input class="app-input" type="text" id="sumInput" placeholder="Enter numbers separated by commas" />
+													<button class="app-button" onclick="calculateSum()">Calculate Sum</button>
+													<p id="sumResult"></p>
+											</section>
+
+											<section class="content-box">
+												<h3>Permutation Calculator</h3>
+												<p>
+													Calculate the permutation of your set of values using the calculator below:
+												</p>
+												<input class="app-input" type="number" id="pnInput" placeholder="Enter the value of n" style="width: 200px;"/>
+												<input class="app-input" type="number" id="prInput" placeholder="Enter the value of r" style="width: 200px;"/>
+												<button class="app-button" onclick="calculatePermutation()" style="margin-top: 10px;">Calculate</button>
+												<p id="permutationResult"></p>							
+											</section>
+
+											<section class="content-box">
+												<h3>Combination Calculator</h3>
+												<p>Calculate the combination of your set of values using the calculator below:</p>
+												<input class="app-input" type="number" id="nInput" placeholder="Enter the value of n" style="width: 200px;"/>
+												<input class="app-input" type="number" id="rInput" placeholder="Enter the value of r" style="width: 200px;"/>
+												<button class="app-button" onclick="calculateCombination()" style="margin-top: 10px;">Calculate</button>
+												<p id="combinationResult"></p>
+											</section>
+
+											<section class="content-box">
+												<h3>Expected Value Calculator</h3>
+												<p>
+													Calculate the expected value from a set of values using the calculator below:
+												</p>
+												<form>
+													<label for="probabilities">Probabilities P(x) (comma-separated):</label>
+													<input class="app-input" id="probabilities" placeholder="ex. 0.2, 0.3, 0.5"></input>
+											
+													<label for="values">Values of X (comma-separated):</label>
+													<input class="app-input" id="values" placeholder="ex. 5, 10, 15"></input>
+													<br><br>
+													<button class="app-button" type="button" onclick="calculateExpectedValue()">Calculate</button>
+											
+													<div id="result"></div>
+												</form>
+											</section>
+
+											<section class="content-box">
+												<h3>Variance Calculator</h3>
+												<p>Calculate the variance of a data set using the calculator below:</p>
+											
+												<input class="app-input" type="text" id="numbersInput" placeholder="Enter numbers separated by commas" />
+												<button class="app-button" onclick="calculateVariance()">Calculate Variance</button>
+												<p id="varianceResult"></p>
+											</section>
+
+											<section class="content-box">
+												<h3>Graph Coloring</h3>
+												<p>Below is an activity from <a href="https://www.geogebra.org/?lang=en" target="_blank">geogebra.com</a> that will test your graph coloring skill. Start by clicking on a vertex and proceed until all the conflicts will be gone.</p>
+												<iframe scrolling="no" title="Vertex coloring" src="https://www.geogebra.org/material/iframe/id/zw7WE45e/width/660/height/496/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="100%" height="496px" style="border:0px;"> </iframe>
+											</section>
+
+										</article>
+									</div>
+								</div>
+							</div>
+						</section>
+					
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+								
+							</div>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

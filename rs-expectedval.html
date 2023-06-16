@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CMSC 57 - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="./assets/js/apps.js"></script>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Discrete Mathematical Structures</a></h1>
+						<p>A Portfolio by: Jeffer John Mezo</p>
+
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li class="current">
+								<a href="#">Topics</a>
+								<ul>
+									<li>
+										<a href="#">Unit 1 &nbsp &nbsp ❯</a>
+										<ul>
+											<li><a href="ls-basicsofcounting.html">Basic of Counting</a></li>
+											<li><a href="ls-pigeonhole.html">Pigeonhole Principle</a></li>
+											<li><a href="ls-permandcombi.html">Generalized Permutation and Combination</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Unit 2 &nbsp &nbsp ❯</a>
+										<ul>
+											<li><a href="rs-algebrastruct.html">Algebraic Structure</a></li>
+											<li><a href="rs-finiteprob.html">Finite Probability</a></li>
+											<li><a href="rs-expectedval.html">Expected Value & Variance</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Unit 3 &nbsp &nbsp ❯</a>
+										<ul>
+											<li><a href="ls-graphmodel.html">Graphs and Graph Models</a></li>
+											<li><a href="ls-eulerhamiltion.html">Euler and Hamiltonian Paths</a></li>
+											<li><a href="ls-graphcolor.html">Graph Coloring</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="application.html">Application</a></li>
+							<!-- <li><a href="about.html">About</a></li> -->
+							<!-- <li><a href="no-sidebar.html">No Sidebar</a></li> -->
+						</ul>
+					</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+
+								<!-- Content -->
+									<article class="box post">
+										<a href="#" class="image featured"><div class="img-contain"><img src="images/pic07.jpg" alt="" style="margin-top: 0px;"/></div></a>
+										<header>
+											<h2>Expected Value and Variance</h2>
+											<p>Discrete Mathematical Structures - Unit 2</p>
+										</header>
+										<header>
+											<h3>Expected Value</h3>
+										</header>
+										
+										<p>
+											Expected value is a concept used in probability and statistics to measure the average outcome of a random event over the long run. It provides a way to estimate what you might expect to gain or lose on average when you repeat an experiment or take part in a random process multiple times.
+										</p>
+										<p>
+											In simple terms, the expected value is the sum of the possible outcomes of an event, weighted by their respective probabilities. It represents the average value you can expect to obtain over many trials.
+										</p>
+										<section class="content-box">
+											<p>
+												To illustrate this, let's consider rolling a fair six-sided die. Each face of the die has a number from 1 to 6. The expected value of a single roll can be calculated by taking the sum of each outcome multiplied by its probability.
+											</p>
+											<p>
+												For this example, the probability of rolling a 1, 2, 3, 4, 5, or 6 is 1/6 each because the die is fair. 
+											</p>	
+											<p>
+												So, the expected value is:
+												(1/6) * 1 + (1/6) * 2 + (1/6) * 3 + (1/6) * 4 + (1/6) * 5 + (1/6) * 6 = 3.5
+											</p>
+											<p>
+												Therefore, the expected value of a single roll of a fair six-sided die is 3.5. This means that, on average, you can expect the outcome of rolling the die repeatedly to converge towards 3.5.
+											</p>
+											<p>
+												Calculate the expected value from a set of values using the calculator below:
+											</p>
+											<form>
+												<label for="probabilities">Probabilities P(x) (comma-separated):</label>
+												<input class="app-input" id="probabilities" placeholder="ex. 0.2, 0.3, 0.5"></input>
+										
+												<label for="values">Values of X (comma-separated):</label>
+												<input class="app-input" id="values" placeholder="ex. 5, 10, 15"></input>
+												<br><br>
+												<button class="app-button" type="button" onclick="calculateExpectedValue()">Calculate</button>
+										
+												<div id="result"></div>
+											</form>
+										</section>
+											<p>
+												The concept of expected value is widely used in various fields, such as gambling, finance, and insurance, to make informed decisions by considering the potential gains or losses associated with different outcomes. It provides a useful tool for assessing risk and estimating long-term average results.
+											</p>
+
+										<header>
+											<h3>Variance</h3>
+										</header>
+											<p>
+												Variance is a measure of how spread out or dispersed a set of data or probability distribution is. It quantifies the variability or deviation from the expected value.
+												In the context of probability and statistics, variance is often used to understand the degree of uncertainty or variability associated with a random variable or a set of observations. It tells us how much the values in a data set differ from the average.
+											</p>
+
+										<section class="content-box">
+											<p>
+												Let's consider a random variable X that follows a discrete probability distribution with outcomes X<sub>1</sub>, X<sub>2</sub>, ..., X<sub>n</sub>, each occurring with probabilities p<sub>1</sub>, p<sub>2</sub>, ..., p<sub>n</sub>, respectively.
+
+												<p>	The variance (Var) of this discrete probability distribution can be calculated using the formula: <br>
+
+												Var(X) = (X<sub>1</sub> - μ)<sup>2</sup> * p<sub>1</sub> + (X<sub>2</sub> - μ)<sup>2</sup> * p<sub>2</sub> + ... + (X<sub>n</sub> - μ)<sup>2</sup> * p<sub>n</sub>,
+														<br>
+												where μ is the mean or expected value of X, given by:
+														<br>
+												μ = X<sub>1</sub> * p<sub>1</sub> + X<sub>2</sub> * p<sub>2</sub> + ... + X<sub>n</sub> * p<sub>n</sub>.</p>
+											</p>
+											
+											<p>
+												A large variance indicates that the data points are more spread out, meaning they deviate from the mean to a greater extent. Conversely, a small variance suggests that the data points are closer to the mean, indicating less dispersion.
+											</p>	
+											
+											<p>Calculate the variance of a data set using the calculator below:</p>
+											
+											<input class="app-input" type="text" id="numbersInput" placeholder="Enter numbers separated by commas" />
+											<button class="app-button" onclick="calculateVariance()">Calculate Variance</button>
+											<p id="varianceResult"></p>
+											
+										</section>
+										<p>
+											The concept of variance is valuable because it allows us to quantify and compare the variability of different sets of data. It is widely used in various statistical analyses, such as hypothesis testing, decision-making, and modeling, to understand the distribution of data and make inferences about populations based on samples.
+										</p>
+									</article>
+									<a href="rs-finiteprob.html" class="button" style="float: left;">❮ Previous</a>
+									<a href="ls-graphmodel.html" class="button" style="float: right;">Next ❯</a>
+							</div>
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<section class="box">
+										<a href="#" class="image featured"><img src="images/" alt="" /></a>
+										<header>
+											<h3>CMSC 57 - Unit 2</h3>
+										</header>
+										<p>This section of the course provides us a clear view towards mathematical structures that are leaning towards the application of probabilities, expected values, as well as variance.</p>
+										<p>
+											Include in this article will just be some key concepts that is collected from the whole contents of this course.
+										</p>
+									</section>
+									<!-- <section class="box">
+										<header>
+											<h3>Feugiat consequat</h3>
+										</header>
+										<p>Veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat sed lorem consequat feugiat lorem dolore.</p>
+										<ul class="divided">
+											<li><a href="#">Sed et blandit consequat sed</a></li>
+											<li><a href="#">Hendrerit tortor vitae sapien dolore</a></li>
+											<li><a href="#">Sapien id suscipit magna sed felis</a></li>
+											<li><a href="#">Aptent taciti sociosqu ad litora</a></li>
+										</ul>
+										<footer>
+											<a href="#" class="button alt">Ipsum consequat</a>
+										</footer>
+									</section> -->
+
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+								
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

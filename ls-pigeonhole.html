@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CMSC 57 - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="./assets/js/apps.js"></script>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Discrete Mathematical Structures</a></h1>
+						<p>A Portfolio by: Jeffer John Mezo</p>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li class="current">
+									<a href="#">Topics</a>
+									<ul>
+										<li>
+											<a href="#">Unit 1 &nbsp &nbsp ❯</a>
+											<ul>
+												<li><a href="ls-basicsofcounting.html">Basic of Counting</a></li>
+												<li><a href="ls-pigeonhole.html">Pigeonhole Principle</a></li>
+												<li><a href="ls-permandcombi.html">Generalized Permutation and Combination</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Unit 2 &nbsp &nbsp ❯</a>
+											<ul>
+												<li><a href="rs-algebrastruct.html">Algebraic Structure</a></li>
+												<li><a href="rs-finiteprob.html">Finite Probability</a></li>
+												<li><a href="rs-expectedval.html">Expected Value & Variance</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Unit 3 &nbsp &nbsp ❯</a>
+											<ul>
+												<li><a href="ls-graphmodel.html">Graphs and Graph Models</a></li>
+												<li><a href="ls-eulerhamiltion.html">Euler and Hamiltonian Paths</a></li>
+												<li><a href="ls-graphcolor.html">Graph Coloring</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="application.html">Application</a></li>
+								<!-- <li><a href="about.html">About</a></li> -->
+								<!-- <li><a href="no-sidebar.html">No Sidebar</a></li> -->
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<section class="box">
+										<a href="#" class="image featured"><img src="images/" alt="" /></a>
+										<header>
+											<h3>CMSC 57 - Unit 1</h3>
+										</header>
+										<p>
+											The Unit 1 of Discrete Mathematical Structures is a great way for us to get introducted to the course. It gave us insights to what we could be expecting for our future lessons. 
+										</p>
+										<p>
+											Topics like combination, permutation, and the pigeon hole principle become an essential stepping stone for us to learn more complex topics for the next parts of the course.
+										</p>
+									</section>
+									<!-- <section class="box">
+										<header>
+											<h3>Feugiat consequat</h3>
+										</header>
+										<p>Veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat sed lorem consequat feugiat lorem dolore.</p>
+										<ul class="divided">
+											<li><a href="#">Sed et blandit consequat sed</a></li>
+											<li><a href="#">Hendrerit tortor vitae sapien dolore</a></li>
+											<li><a href="#">Sapien id suscipit magna sed felis</a></li>
+											<li><a href="#">Aptent taciti sociosqu ad litora</a></li>
+										</ul>
+										<footer>
+											<a href="#" class="button alt">Ipsum consequat</a>
+										</footer>
+									</section> -->
+
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
+
+								<!-- Content -->
+									<article class="box post">
+										<a href="#" class="image featured"><div class="img-contain"><img src="images/pic03.png" alt="" style="margin-top: -25px;"/></div></a>
+										<header>
+											<h2>Pigeonhole Principle</h2>
+											<p>Discrete Mathematical Structures - Unit 1</p>
+										</header>
+										<p>
+											The pigeonhole principle, also known as the Dirichlet principle, is a fundamental principle in combinatorics that deals with the distribution of objects into containers. It states that if you try to distribute more objects than there are containers, then at least one container must contain more than one object. To put it simply, the pigeonhole principle suggests that if you have more pigeons than available pigeonholes, there must be at least one pigeonhole with more than one pigeon.
+										</p>
+										<p>
+											The principle can be formally stated as follows: <br>If you have n objects to distribute into m containers, where n > m, then there exists at least one container that contains more than one object.
+										</p>
+										<p>
+											The pigeonhole principle is quite intuitive. For example, if you have 5 pigeons and only 4 pigeonholes, you cannot assign each pigeon to a separate pigeonhole without having at least one pigeonhole with multiple pigeons.
+										</p>
+										<p>
+											This principle finds applications in various areas, including mathematics, computer science, and even everyday life. It helps in proving the existence of repetitions, overlaps, or patterns when distributing objects among limited resources. By understanding and utilizing the pigeonhole principle, you can make observations and draw conclusions about situations where there are more objects than available spaces or resources.
+
+										</p>
+									<section class="content-box">
+										<p>Below is a sample question relating to the Pigeonhole Principle:</p>
+										<p>
+											How many socks should you pick from a drawer containing red, green, and blue socks to guarantee that you have at least two socks of the same color?
+										</p>
+										<input type="text" class="app-input" id="pigeonInput" placeholder="Enter you Answer" style="width: 200px;">
+										<button class="app-button" onclick="pigeonQuiz()">Submit</button>
+										<p id="pigeonResult"></p>
+									</section>
+									</article>
+									<a href="ls-basicsofcounting.html" class="button" style="float: left;">❮ Previous</a>
+									<a href="ls-permandcombi.html" class="button" style="float: right;">Next ❯</a>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+								</div>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

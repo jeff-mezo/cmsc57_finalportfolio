@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CMSC 57 - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="./assets/js/apps.js"></script>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Discrete Mathematical Structures</a></h1>
+						<p>A Portfolio by: Jeffer John Mezo</p>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li class="current">
+									<a href="#">Topics</a>
+									<ul>
+										<li>
+											<a href="#">Unit 1 &nbsp &nbsp ❯</a>
+											<ul>
+												<li><a href="ls-basicsofcounting.html">Basic of Counting</a></li>
+												<li><a href="ls-pigeonhole.html">Pigeonhole Principle</a></li>
+												<li><a href="ls-permandcombi.html">Generalized Permutation and Combination</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Unit 2 &nbsp &nbsp ❯</a>
+											<ul>
+												<li><a href="rs-algebrastruct.html">Algebraic Structure</a></li>
+												<li><a href="rs-finiteprob.html">Finite Probability</a></li>
+												<li><a href="rs-expectedval.html">Expected Value & Variance</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Unit 3 &nbsp &nbsp ❯</a>
+											<ul>
+												<li><a href="ls-graphmodel.html">Graphs and Graph Models</a></li>
+												<li><a href="ls-eulerhamiltion.html">Euler and Hamiltonian Paths</a></li>
+												<li><a href="ls-graphcolor.html">Graph Coloring</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="application.html">Application</a></li>
+								<!-- <li><a href="about.html">About</a></li> -->
+								<!-- <li><a href="no-sidebar.html">No Sidebar</a></li> -->
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<section class="box">
+										<a href="#" class="image featured"><img src="images/" alt="" /></a>
+										<header>
+											<h3>CMSC 57 - Unit 1</h3>
+										</header>
+										<p>
+											The Unit 1 of Discrete Mathematical Structures is a great way for us to get introducted to the course. It gave us insights to what we could be expecting for our future lessons. 
+										</p>
+										<p>
+											Topics like combination, permutation, and the pigeon hole principle become an essential stepping stone for us to learn more complex topics for the next parts of the course.
+										</p>
+									</section>
+									<!-- <section class="box">
+										<header>
+											<h3>Feugiat consequat</h3>
+										</header>
+										<p>Veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat sed lorem consequat feugiat lorem dolore.</p>
+										<ul class="divided">
+											<li><a href="#">Sed et blandit consequat sed</a></li>
+											<li><a href="#">Hendrerit tortor vitae sapien dolore</a></li>
+											<li><a href="#">Sapien id suscipit magna sed felis</a></li>
+											<li><a href="#">Aptent taciti sociosqu ad litora</a></li>
+										</ul>
+										<footer>
+											<a href="#" class="button alt">Ipsum consequat</a>
+										</footer>
+									</section> -->
+
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
+
+								<!-- Content -->
+									<article class="box post">
+										<a href="#" class="image featured"><div class="img-contain"><img src="images/pic04.jpg" alt=""/></div></a>
+										<header>
+											<h2 style="line-height: normal;">Generalized Permutation and Combination</h2>
+											<p>Discrete Mathematical Structures - Unit 1</p>
+											
+										</header>
+											<p>
+												Combinations and permutations are fundamental concepts in combinatorics. Combinations focus on the selection of objects from a larger set without considering the order, while permutations involve arranging objects in a specific order. These concepts are widely applied in mathematics, statistics, computer science, and various fields to solve problems related to arranging objects, selecting subsets, calculating probabilities, and more.
+											</p>
+										<header>
+											<h3>Permutation</h3>
+										</header>
+										<p>
+											Permutation is a concept in combinatorics that refers to the arrangement of objects in a specific order. It is the rearrangement of elements from a set to form different ordered sequences.
+										</p>
+										<p>
+											A permutation is different from a combination because in a permutation, the order of the elements matters. For example, if we have the set {A, B, C}, the permutations of this set would be:
+										</p>
+										<section class="content-box">
+											<ol style="columns: 2; -webkit-columns: 2;
+											-moz-columns: 2;">
+												<li>ABC</li>
+												<li>ACB</li>
+												<li>BAC</li>
+												<li>BCA</li>
+												<li>CAB</li>
+												<li>CBA</li>
+											</ol>
+											<p>
+												As you can see, the order of the elements changes in each permutation, resulting in different sequences.
+											</p>
+											<p>
+												Calculate the permutation of your set of values using the calculator below:
+											</p>
+											<input class="app-input" type="number" id="pnInput" placeholder="Enter the value of n" style="width: 200px;"/>
+											<input class="app-input" type="number" id="prInput" placeholder="Enter the value of r" style="width: 200px;"/>
+											<button class="app-button" onclick="calculatePermutation()" style="margin-top: 10px;">Calculate</button>
+											<p id="permutationResult"></p>
+										</section>
+										<p>
+											The number of possible permutations of a set or a sequence can be calculated using the factorial function. The factorial of a positive integer n, denoted as n!, is the product of all positive integers from 1 to n. <br> Mathematically, n! = n * (n-1) * (n-2) * ... * 3 * 2 * 1. <br>
+											The number of permutations of a set with n elements, denoted as P(n), can be calculated as P(n) = n!.
+										</p>
+										<p>
+											Permutations can also involve selecting a specific number of elements from a larger set. In this case, it is referred to as a permutation of r elements taken from a set of n elements, denoted as P(n, r). The formula to calculate P(n, r) is P(n, r) = n! / (n - r)!. This formula takes into account the number of elements being selected and the order in which they are arranged.
+										</p>
+										<p>
+											Permutations have various applications in mathematics, statistics, computer science, and many other fields. They are used to solve problems related to arrangements, rankings, ordering, and unique sequences.
+										</p>
+										<header>
+											<h3>Combination</h3>
+										</header>
+										<p>
+											Combination is another concept in combinatorics that involves selecting a subset of objects from a larger set, without considering the order in which they are arranged. In other words, combinations focus on the selection of objects rather than their arrangement.
+										</p>
+										<p>
+											Unlike permutations, combinations do not care about the order of the selected elements. For example, if we have the set {A, B, C}, the combinations of this set would be:
+										</p>
+										<section class="content-box">
+											<ol style="columns: 2; -webkit-columns: 2;
+											-moz-columns: 3;">
+												<li>AB</li>
+												<li>AC</li>
+												<li>BC</li>
+											</ol>
+											<p>
+												In this case, the order of the elements does not matter, and the combinations are considered the same even if the elements are listed in a different order.
+											</p>
+										</section>
+										<p>
+											The number of possible combinations of a set or a sequence can be calculated using the concept of binomial coefficients. Binomial coefficients represent the number of ways to choose r elements from a set of n elements, without regard to their order. This value is denoted as C(n, r), and it can be calculated using the formula:
+										</p>
+										<section class="content-box">
+											<p>
+												C(n, r) = n! / (r! * (n - r)!)
+											</p>
+											<p>Calculate the combination of your set of values using the calculator below:</p>
+											<input class="app-input" type="number" id="nInput" placeholder="Enter the value of n" style="width: 200px;"/>
+											<input class="app-input" type="number" id="rInput" placeholder="Enter the value of r" style="width: 200px;"/>
+											<button class="app-button" onclick="calculateCombination()" style="margin-top: 10px;">Calculate</button>
+											<p id="combinationResult"></p>
+										</section>
+										<p>
+											Combinations are useful in scenarios where the order of elements is not important, such as selecting a committee, forming a team, or choosing a group of items without considering their arrangement. They have applications in mathematics, statistics, probability theory, and various fields where the focus is on selecting subsets from a larger set.
+										</p>
+									</article>
+									<a href="ls-pigeonhole.html" class="button" style="float: left;">❮ Previous</a>
+									<a href="rs-algebrastruct.html" class="button" style="float: right;">Next ❯</a>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+								</div>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
